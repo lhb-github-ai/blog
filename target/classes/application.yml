@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.79.195.245:3306/blog?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: blog
+    password: 123456
+
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+#  messages:
+#    basename: i18n/message
+
+mybatis:
+  configuration:
+    call-setters-on-nulls: true #设置返回字段不为空，前端不报错
+
+comment.avatar: /images/avatar.png
+
