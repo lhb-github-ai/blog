@@ -32,7 +32,7 @@ public class MD5util {
 
 
     public static void main(String[] args) {
-        System.out.println(code("aaa"));
+        System.out.println(code("123"));
     }
 
 }
